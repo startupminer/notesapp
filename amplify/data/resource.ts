@@ -8,10 +8,15 @@ and "delete" any "Todo" records.
 =========================================================================*/
 const schema = a.schema({
   Todo: a
+    // .model({
+    //   content: a.string(),
+    // })
     .model({
-      content: a.string(),
+      name:a.string(),
+      description: a.string(),
+      image: a.string(),
     })
-    .authorization((allow) => [allow.guest()]),
+    .authorization((allow) => [allow.owner()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
@@ -19,7 +24,8 @@ export type Schema = ClientSchema<typeof schema>;
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: 'iam',
+    // defaultAuthorizationMode: 'iam',
+    defaultAuthorizationMode: 'userPool',
   },
 });
 
