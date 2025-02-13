@@ -1,8 +1,9 @@
-# React + Vite
+# FullStack Notes App (React + AWS Amplify)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview: Created a fullstack CRUD notes web app with React and AWS Amplify
 
-Currently, two official plugins are available:
+Tech Stack
+- React (Frontend)
+- AWS Amplify (Backend Hosting, Storage, Authentication)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
